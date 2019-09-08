@@ -1,0 +1,247 @@
+%img-wh100{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+#index-s1__carousel{
+    .carousel-inner, .item{
+        height: 100vh;
+        max-height: 100vh;
+    }
+    picture{
+        img{
+            @extend %img-wh100;
+        }
+    }
+}
+#index-s3__carousel,#index-s4__carousel{
+    .carousel-inner, .item {
+        height: 50vh;
+    }
+    img{
+        @extend %img-wh100;
+    }    
+}
+.bg{
+    &-blk{
+        background-color: $color-blk;
+    }
+    &-slv{
+        background-color: $color-slv;
+    }
+}
+.border{
+    &-bottom{
+        border-bottom-style: $border-style;
+        border-bottom-width: $border-size;
+    }
+    &-left{
+        border-left-style: $border-style;
+        border-left-width: $border-size;
+    }
+    &-right{
+        border-right-style: $border-style;
+        border-right-width: $border-size;
+    }
+    &-slv{
+        border-color: $color-slv;
+    }
+    &-top{
+        border-top-style: $border-style;
+        border-top-width: $border-size;        
+    }
+}
+.carousel-indicators{
+    .active{
+        width: 25px; 
+        height: 25px; 
+        border-radius: 0px;
+        border-width: 0px;
+        opacity: 1;
+        background-color: transparent;
+    }
+    li{
+        width: 25px; 
+        height: 25px; 
+        background-image: url("../img/favicon.png");
+        object-fit: contain;
+        border-radius: 0px;
+        border-width: 0px;
+        opacity: 0.5;
+    }
+}
+.cc{
+    &-left{
+        left: 0;
+        right: auto;
+    }
+    &-right{
+        left: auto;
+        right:0;
+    }
+}
+.d{
+    &-block{
+        display: block;
+    }
+    &-flex{
+        display: flex;
+    }
+}
+.float{
+    &-left{
+        float: left;
+    }
+    &-none{
+        float: none;
+    }
+    &-right{
+        float: right;
+    }
+}
+.font{
+    &-big{
+        font-size: $font-big-size;
+    }
+    &-bigger{
+        font-size: $font-bigger-size; 
+    }
+    &-header{
+        font-family: $font-header;
+    }
+    &-logo{
+        font-family: $font-logo;
+    }
+    &-menu{
+        font-family: $font-menu;
+    }
+    &-sign{
+        font-family: $font-sign;
+    }
+}
+.footer-menu{
+    a{
+        &:hover{
+            opacity: 0.5;
+        }
+        color: $color-wht;
+        text-decoration: none;
+    }
+    border-left: 1px solid gray;
+    padding-left: 15px;
+}
+.h-50vh{
+    height: 50vh;
+    min-height: 50vh;
+}
+.index-s1__slide-logo{
+    height: $slide-logo-size;
+    margin-bottom: 5px;
+    width: $slide-logo-size;
+}
+.index-s5{
+    @include set-background($index-s5-bg);
+}
+.m{
+    &b-20{
+        margin-bottom: 20px;
+    }
+    &x-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &y-auto{
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+} 
+.navbar{
+    &-inverse{
+        .navbar-nav>.active>a{
+            &:hover{
+                background-color: $color-red;
+                opacity: 0.7;
+            }
+            background-color: $color-red;
+        }
+        border-color: $color-red;
+        box-shadow: $navbar-shadow;
+    }
+    &-text{
+        &:hover{
+            opacity: 0.7;
+        }
+        color: $color-red !important;
+        display: inline-block;
+        font-size: $navbar-logo-size;
+        margin: 5px;
+        text-decoration: none !important;
+        text-shadow: $navbar-logo-shadow;
+    }
+}
+.opacity{
+    &-8{
+        opacity: 0.8;
+    }
+}
+.p{
+    &-0{
+        padding: 0px;
+    }
+    &-20{
+        padding: 20px;
+    }
+    &-40{
+        padding: 40px;
+    }
+    &b-20{
+        padding-bottom: 20px;
+    }
+    &t-20{
+        padding-top: 20px;
+    }
+}
+.shadow{
+    &-red{
+        text-shadow: $navbar-logo-shadow;
+    }
+    &-white{
+        text-shadow: $shadow-wht-color;
+    }
+}
+.text{
+    &-white{
+        color: $color-wht;
+    }
+    &-red{
+        color: $color-red;
+    }
+}
+
+@media all and (max-width: 768px){
+    .float-xs{
+        &-left{
+            float: left;
+        }
+        &-none{
+            float: none;
+        }
+        &-right{
+            float: right;
+        }
+    }
+    .footer-menu{
+        border-left: none;
+    }
+    .text-xs{
+        &-center{
+            text-align: center;
+        }
+        &-left{
+            text-align: left;
+        }
+        &-right{
+            text-align: right;
+        }
+    }
+}
