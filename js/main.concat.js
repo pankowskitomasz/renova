@@ -130,6 +130,14 @@ function pointsMap() {
 	 	animation: google.maps.Animation.Drop
 	});
 }
+$("#modal-portfolio, #modal-portfolio *").click(function(){
+    $(this).modal('hide');
+});
+$(".thumbnail-link").click(function(){
+    var imgFile = $(this).find("img").attr("src");
+    $("#modal-portfolio img").attr("src",imgFile);
+    $("#modal-portfolio").modal();
+});
 
 gpdrDeclaration();
 setTimeout(swapTarget,11000);
