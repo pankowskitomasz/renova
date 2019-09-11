@@ -1,0 +1,12 @@
+@mixin set-background($imgA){
+    background-image: url($imgA);
+    background-size: cover;
+}
+
+@mixin set-height($sectionArrayA,$heightPropA){
+    @for $i from 1 through length($sectionArrayA){
+        .#{nth($sectionArrayA,$i)} {
+            @extend #{$heightPropA};
+        }
+    }
+}

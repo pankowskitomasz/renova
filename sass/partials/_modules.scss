@@ -1,0 +1,370 @@
+%bg-top-right{
+    background-position: right top;
+}
+%img-wh100{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+#index-s1__carousel, #about-s1__carousel{
+    .carousel-inner, .item{
+        height: 100vh;
+        max-height: 100vh;
+    }
+    picture{
+        img{
+            @extend %img-wh100;
+        }
+    }
+}
+#index-s3__carousel,#index-s4__carousel{
+    .carousel-inner, .item {
+        height: 50vh;
+    }
+    img{
+        @extend %img-wh100;
+    }    
+}
+.about-s2__left-col{
+    @extend %bg-top-right;
+    @include set-background($about-s2-left-col-bg);
+}
+.about-s3__right-col{
+    @extend %bg-top-right;
+    @include set-background($about-s3-right-col-bg);
+}
+.bg{
+    &-blk{
+        background-color: $color-blk;
+    }
+    &-red{
+        background-color: $color-red;
+    }
+    &-slv{
+        background-color: $color-slv;
+    }
+}
+.border{
+    &-bottom{
+        border-bottom-style: $border-style;
+        border-bottom-width: $border-size;
+    }
+    &-left{
+        border-left-style: $border-style;
+        border-left-width: $border-size;
+    }
+    &-right{
+        border-right-style: $border-style;
+        border-right-width: $border-size;
+    }
+    &-red{
+        border-color: $color-red;
+    }
+    &-slv{
+        border-color: $color-slv;
+    }
+    &-top{
+        border-top-style: $border-style;
+        border-top-width: $border-size;        
+    }
+}
+.carousel-indicators{
+    .active{
+        width: 25px; 
+        height: 25px; 
+        border-radius: 0px;
+        border-width: 0px;
+        opacity: 1;
+        background-color: transparent;
+    }
+    li{
+        width: 25px; 
+        height: 25px; 
+        background-image: url("../img/favicon.png");
+        object-fit: contain;
+        border-radius: 0px;
+        border-width: 0px;
+        opacity: 0.5;
+    }
+}
+.cc{
+    &-left{
+        left: 0;
+        right: auto;
+    }
+    &-right{
+        left: auto;
+        right:0;
+    }
+}
+.contact-s1{
+    @include set-background($contact-s1-bg-lg);
+}
+.d{
+    &-block{
+        display: block;
+    }
+    &-flex{
+        display: flex;
+    }
+}
+.float{
+    &-left{
+        float: left;
+    }
+    &-none{
+        float: none;
+    }
+    &-right{
+        float: right;
+    }
+}
+.font{
+    &-big{
+        font-size: $font-big-size;
+    }
+    &-bigger{
+        font-size: $font-bigger-size; 
+    }
+    &-header{
+        font-family: $font-header;
+    }
+    &-logo{
+        font-family: $font-logo;
+    }
+    &-menu{
+        font-family: $font-menu;
+    }
+    &-sign{
+        font-family: $font-sign;
+    }
+}
+.footer-menu{
+    a{
+        &:hover{
+            opacity: 0.5;
+        }
+        color: $color-wht;
+        text-decoration: none;
+    }
+    border-left: 1px solid gray;
+    padding-left: 15px;
+}
+.h{
+    &-50vh{
+        min-height: 50vh;
+    }
+    &-100vh{
+        min-height: 100vh;
+    }
+}
+.index-s1__slide-logo{
+    height: $slide-logo-size;
+    margin-bottom: 5px;
+    width: $slide-logo-size;
+}
+.index-s5{
+    @include set-background($index-s5-bg);
+}
+.m{
+    &-0{
+        margin: 0px;
+    }
+    &b-20{
+        margin-bottom: 20px;
+    }
+    &x-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &y-auto{
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+} 
+.navbar{
+    &-inverse{
+        .navbar-nav>.active>a{
+            &:hover{
+                background-color: $color-red;
+                opacity: 0.7;
+            }
+            background-color: $color-red;
+        }
+        border-color: $color-red;
+        box-shadow: $navbar-shadow;
+    }
+    &-text{
+        &:hover{
+            opacity: 0.7;
+        }
+        color: $color-red !important;
+        display: inline-block;
+        font-size: $navbar-logo-size;
+        margin: 5px;
+        text-decoration: none !important;
+        text-shadow: $navbar-logo-shadow;
+    }
+}
+.opacity{
+    &-8{
+        opacity: 0.8;
+    }
+}
+.p{
+    &-0{
+        padding: 0px;
+    }
+    &-20{
+        padding: 20px;
+    }
+    &-40{
+        padding: 40px;
+    }
+    &b-20{
+        padding-bottom: 20px;
+    }
+    &t-20{
+        padding-top: 20px;
+    }
+    &t-50{
+        padding-top: 50px;
+    }
+}
+.portfolio-s1{
+    @include set-background($portfolio-s1-bg-lg);
+}
+.radius{
+    &-0{
+        border-radius: 0px;
+    }
+}
+.reviews-s1{
+    @include set-background($reviews-s1-bg-lg);
+}
+.services-s1{
+    @include set-background($services-s1-bg-lg);
+}
+.services-s3{
+    @include set-background($services-s3-bg-lg);
+}
+.shadow{
+    &-box{
+        &-red{
+            box-shadow: 0 0 5px $color-red
+        }
+    }
+    &-label{
+        box-shadow: $shadow-label;
+    }
+    &-red{
+        text-shadow: $navbar-logo-shadow;
+    }
+    &-white{
+        text-shadow: $shadow-wht;
+    }
+}
+.text{
+    &-white{
+        color: $color-wht;
+    }
+    &-red{
+        color: $color-red;
+    }
+}
+.thumbnail-link{
+    &:hover{
+        cursor: pointer;
+        filter: grayscale(1);
+        opacity: 0.8;
+        transition-property: filter;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-in-out;
+    }
+}
+.w{
+    &-100{
+        width: 100%;
+    }
+}
+textarea{
+    height: 150px !important;
+    resize: none;
+}
+
+@media (orientation: landscape){
+    .centerize{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%) !important;
+    }
+}
+@media (orientation: portrait){
+    .centerize{
+        img{
+            width: 100%;
+        }
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) !important;
+        width: 100%;
+    }
+}
+@media all and (max-width: 767.8px){
+    .float-xs{
+        &-left{
+            float: left;
+        }
+        &-none{
+            float: none;
+        }
+        &-right{
+            float: right;
+        }
+    }
+    .footer-menu{
+        border-left: none;
+    }
+    .text-xs{
+        &-center{
+            text-align: center;
+        }
+        &-left{
+            text-align: left;
+        }
+        &-right{
+            text-align: right;
+        }
+    }
+}
+@media all and (max-width: 991.8px){
+    .p{
+        &t-xs{
+            &-50{
+                padding-top: 50px;
+            }
+        }
+    }
+    .reviews-s1{
+        @include set-background($contact-s1-bg-md);
+    }
+    .portfolio-s1{
+        @include set-background($portfolio-s1-bg-md);
+    }
+    .reviews-s1{
+        @include set-background($reviews-s1-bg-md);
+    }
+    .services-s1{
+        @include set-background($services-s1-bg-md);
+    }
+    .services-s3{
+        @include set-background($services-s3-bg-md);
+    }
+}
+
+@media all and (min-width: 992px){
+    .d-flex{
+        display: flex !important;
+    }
+}
