@@ -24,20 +24,6 @@
     src: local('Lexend Giga Regular'), local('LexendGiga-Regular'), url(../fonts/PlI5Fl67Mah5Y8yMHE7lkWxDvcE.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
-  @font-face {
-    font-family: 'Sacramento';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Sacramento'), local('Sacramento-Regular'), url(../fonts/buEzpo6gcdjy0EiZMBUG4CMf_exL.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-  @font-face {
-    font-family: 'Sacramento';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Sacramento'), local('Sacramento-Regular'), url(../fonts/buEzpo6gcdjy0EiZMBUG4C0f_Q.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 @font-face {
     font-family: 'Saira Stencil One';
     font-style: normal;
@@ -62,3 +48,12 @@
     src: local('Saira Stencil One Regular'), local('SairaStencilOne-Regular'), url(../fonts/SLXSc03I6HkvZGJ1GvvipLoYSTEL9DsLYQk.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* latin */
+@font-face {
+    font-family: 'Dawning of a New Day';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Dawning of a New Day'), local('DawningofaNewDay'), url(../fonts/t5t_IQMbOp2SEwuncwLRjMfIg1yYit_nAw8cj2M.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }

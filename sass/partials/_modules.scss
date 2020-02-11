@@ -20,18 +20,25 @@
 #index-s3__carousel,#index-s4__carousel{
     .carousel-inner, .item {
         height: 50vh;
+        min-height: $index-s3-minh;
     }
     img{
         @extend %img-wh100;
+        height: 50vh;
+        min-height: $index-s3-minh;
     }    
 }
 .about-s2__left-col{
     @extend %bg-top-right;
     @include set-background($about-s2-left-col-bg);
+    height: 50vh;
+    min-height: $about-s2-left-col-minh;
 }
 .about-s3__right-col{
     @extend %bg-top-right;
     @include set-background($about-s3-right-col-bg);
+    height: 50vh;
+    min-height: $about-s3-right-col-minh;
 }
 .bg{
     &-blk{
@@ -153,6 +160,12 @@
 .h{
     &-50vh{
         min-height: 50vh;
+    }
+    &-66vh{
+        min-height: 66vh;
+    }
+    &-100{
+        height: 100%;
     }
     &-100vh{
         min-height: 100vh;
