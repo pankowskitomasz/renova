@@ -60,7 +60,7 @@
             </div>
         </div>
         <div class="container-fluid confirm-s1 border-bottom border-red">
-            <div class="row p-20 d-flex h-100vh">
+            <div class="row p-40 d-flex h-100vh">
                 <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 text-center my-auto mx-auto">
                     <h3 class="text-center font-header">Message sent!</h3>
                     <table class="table table-hover text-left">
@@ -161,7 +161,12 @@
                 </div>
             </div>
             <div class="row text-center opacity-8 pt-20">
-                <p class="font-header">Website demo, Copyright &copy; 2019</p>
+                <small class="font-header">
+                    Copyright &copy; 2019-2021 Tomasz Pankowski
+                    <a href="privacy.html" class="btn-link text-white">
+                        Privacy policy
+                    </a>
+                </small>
             </div>
         </footer> 
         <div class="modal" id="privacyModal">

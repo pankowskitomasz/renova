@@ -8,8 +8,8 @@
 }
 #index-s1__carousel, #about-s1__carousel{
     .carousel-inner, .item{
-        height: 100vh;
-        max-height: 100vh;
+        height: 50vh;
+        max-height: 50vh;
     }
     picture{
         img{
@@ -19,7 +19,7 @@
 }
 #index-s3__carousel,#index-s4__carousel{
     .carousel-inner, .item {
-        height: 50vh;
+        height: 33vh;
     }
     img{
         @extend %img-wh100;
@@ -33,6 +33,18 @@
     @extend %bg-top-right;
     @include set-background($about-s3-right-col-bg);
 }
+.align{
+    &-items{
+        &-center{
+            align-items: center;
+        }
+    }
+}
+.backdrop{
+    &-filter{
+        backdrop-filter: $backdrop-filter;
+    }
+}
 .bg{
     &-blk{
         background-color: $color-blk;
@@ -43,8 +55,11 @@
     &-slv{
         background-color: $color-slv;
     }
+    &-transparent{
+        background-color: transparent;
+    }
 }
-.border{
+.border{    
     &-bottom{
         border-bottom-style: $border-style;
         border-bottom-width: $border-size;
@@ -67,6 +82,8 @@
         border-top-style: $border-style;
         border-top-width: $border-size;        
     }
+    border-style: $border-style;
+    border-width: $border-size;
 }
 .carousel-indicators{
     .active{
@@ -151,6 +168,9 @@
     padding-left: 15px;
 }
 .h{
+    &-33vh{
+        min-height: 33vh;
+    }
     &-50vh{
         min-height: 50vh;
     }
@@ -283,6 +303,9 @@
     }
 }
 .w{
+    &-75{
+        width:75%;
+    }
     &-100{
         width: 100%;
     }
