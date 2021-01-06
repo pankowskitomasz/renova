@@ -1,9 +1,17 @@
 .section-full-height{
-    min-height: 100%;
+    min-height: 100vh;
+}
+
+.section-fourth-height{
+    min-height: 25vh;
 }
 
 .section-half-height{
-    min-height: 50%;
+    min-height: 50vh;
+}
+
+.section-third-height{
+    min-height: 33vh;
 }
 
 *{
@@ -15,3 +23,5 @@ body,html{
 
 @include set-height($section-full-height,".section-full-height");
 @include set-height($section-half-height,".section-half-height");
+@include set-height($section-fourth-height,".section-fourth-height");
+@include set-height($section-third-height,".section-third-height");

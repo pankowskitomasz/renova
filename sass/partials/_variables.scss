@@ -1,5 +1,6 @@
 $about-s2-left-col-bg: "../img/about-s2-left-col-bg.jpg";
 $about-s3-right-col-bg: "../img/about-s3-right-col-bg.jpg";
+$backdrop-filter: blur(15px);
 $border-size: 1px;
 $border-style: solid;
 $color-blk: #333;
@@ -23,19 +24,31 @@ $portfolio-s1-bg-md: "../img/portfolio-s1-bg-md.jpg";
 $reviews-s1-bg-lg: "../img/reviews-s1-bg-lg.jpg";
 $reviews-s1-bg-md: "../img/reviews-s1-bg-md.jpg";
 $section-full-height:
-    "about-s1",
     "confirm-s1",
     "contact-s1",
     "error-s1",
+    "privacy-s1";
+$section-fourth-height:
+    "index-s2";
+$section-half-height:
+    "about-s1",
     "index-s1",
     "index-s5",
     "portfolio-s1",
     "portfolio-s2",
-    "privacy-s1",
     "reviews-s1",
     "services-s1",
     "services-s2",
-    "services-s3",
+    "services-s3";
+$section-third-height:
+    "about-s2",
+    "about-s3",
+    "index-s3",
+    "index-s4",
+    "reviews-s2",
+    "reviews-s3",
+    "reviews-s4",
+    "reviews-s5",
     "services-s4";
 $services-s1-bg-lg: "../img/services-s1-bg-lg.jpg";
 $services-s1-bg-md: "../img/services-s1-bg-md.jpg";
@@ -44,13 +57,3 @@ $services-s3-bg-md: "../img/services-s3-bg-md.jpg";
 $shadow-label: 0 0 10px $color-blk;
 $shadow-wht: 0 0 2px $color-wht;
 $slide-logo-size: 40px;
-$section-half-height:
-    "about-s2",
-    "about-s3",
-    "index-s2",
-    "index-s3",
-    "index-s4",
-    "reviews-s2",
-    "reviews-s3",
-    "reviews-s4",
-    "reviews-s5";
